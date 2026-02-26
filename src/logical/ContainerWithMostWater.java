@@ -9,10 +9,10 @@ public class ContainerWithMostWater {
             int currArea = Math.min(a[l],a[r])*(r-l);
             maxArea = Math.max(currArea,maxArea);
 
-            if(a[l]>a[r])
-                r--;
-            else
+            if(a[l]<a[r])
                 l++;
+            else
+                r--;
         }
 
         System.out.println(maxArea);
