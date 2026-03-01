@@ -5,7 +5,7 @@ public class MajorityElement1 {
         int a[] = {2, 2, 1, 1, 1, 2, 2};
         int count = 1, candidate = a[0];
 
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 1; i < a.length; i++) {
             if (a[i] == candidate) {
                 count++;
             } else {

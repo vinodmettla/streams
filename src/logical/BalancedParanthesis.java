@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class BalancedParanthesis {
     public static void main(String[] args) {
-        String str = "[{()]]";
+        String str = "[{()}]";
         System.out.println(isBalanced(str));;
     }
 
@@ -16,7 +16,7 @@ public class BalancedParanthesis {
             }else if(c ==')' || c =='}' || c ==']'){
                 if(stack.isEmpty()) return false;
 
-                Character top = stack.peek();
+                Character top = stack.pop();
                 if((c==')' && top!='(')||
                         (c=='}' && top!='{')||
                         (c==']' && top!='[')){

@@ -10,6 +10,9 @@ public class ContainerWithMostWater {
             maxArea = Math.max(currArea,maxArea);
 
             if(a[l]<a[r])
+                //Height is still limited by x → area cannot improve.
+                //So moving right pointer is useless.
+                //Only hope is moving left pointer to find taller height:
                 l++;
             else
                 r--;
