@@ -8,7 +8,7 @@ public class RotateAnArrayKTimes {
         int k =  3, n=arr.length-1;
         k=k%arr.length;
         rotate(arr,0,n-k); //upto k-1 for leftshift
-        rotate(arr,n-k+1,n);//upto k for leftshift
+        rotate(arr,n-k+1,n);//from k to n for leftshift
         rotate(arr,0,n);
         System.out.println(Arrays.toString(arr));
 
